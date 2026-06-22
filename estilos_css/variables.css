@@ -9,4 +9,32 @@
     --fuente-principal: "Poppins", sans-serif;
 
     --transicion: 0.3s ease;
+
+
+    
+
+    /* Tipografía */
+    --fuente-principal: "Poppins", sans-serif;
+
+    --texto-xl: 3rem;
+    --texto-lg: 2.2rem;
+    --texto-md: 1.2rem;
+    --texto-sm: 1rem;
+
+    /* Espaciados */
+    --espaciado-xs: .5rem;
+    --espaciado-sm: 1rem;
+    --espaciado-md: 2rem;
+    --espaciado-lg: 4rem;
+    --espaciado-xl: 6rem;
+
+    /* Bordes */
+    --radio: 12px;
+
+    /* Sombras */
+    --sombra-card: 0 4px 15px rgba(0,0,0,.25);
+    --sombra-hover: 0 8px 25px rgba(255,215,0,.25);
+
+    /* Transiciones */
+    --transicion: .3s ease;
 }
