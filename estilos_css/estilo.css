@@ -53,39 +53,39 @@ section{
     padding: 30px 0;
 }
 
-/* BOTONES */
-
-.btn{
-    display: inline-block;
-    padding: 12px 28px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: var(--transicion);
-    cursor: pointer;
-}
-
-.btn-primary{
+.boton_amarillo{
     background: var(--color-amarillo);
     color: var(--color-negro);
     border: 2px solid var(--color-amarillo);
 }
 
-.btn-primary:hover{
+.boton_amarillo:hover{
     background: var(--color-amarillo-hover);
     transform: translateY(-3px);
 }
 
-.btn-secondary{
+.boton_transparente{
     background: transparent;
     border: 2px solid var(--color-amarillo);
     color: var(--color-amarillo);
 }
 
-.btn-secondary:hover{
+.boton_transparente:hover{
     background: var(--color-amarillo);
     color: var(--color-negro);
 }
+.boton_amarillo,
+.boton_transparente{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
 
 /* TARJETAS */
 
@@ -161,19 +161,29 @@ img{
 }
 
 .inicio{
-    width: 35%;
-    max-width: 500px;
+    width: 45%;
+    max-width: 650px;
     margin-left: 5%;
     z-index: 2;
 }
 
 .titulo{
-    font-size: 4rem;
-    line-height: 1.1;
+    font-size: 5rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #fff;
+}
+
+.titulo span{
+    display: block;
+    color: #ffd000;
 }
 
 .hero p{
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    max-width: 650px;
 }
 
 /* beneficios */
@@ -360,6 +370,41 @@ img{
     margin-top: 15px;
     padding-top: 10px;
     font-size: .75rem;
+}
+
+/* ICONOS DE CONTACTO */
+.footer_col li svg {
+    color: #ffd000;
+    margin-right: 10px;
+}
+
+/* ICONOS DE REDES */
+.footer_red {
+    color: #ffd000;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.footer_red:hover {
+    color: #ffffff;
+}
+
+/* COPYRIGHT */
+.footer_copy {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+/* ENLACES FOOTER */
+.footer_col a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer_col a:hover{
+    color: #ffd000;
 }
 
 
