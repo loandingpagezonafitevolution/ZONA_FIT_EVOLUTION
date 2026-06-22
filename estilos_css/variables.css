@@ -1,0 +1,12 @@
+:root{
+
+    --color-negro: #000000;
+    --color-negro-secundario: #1A1A1A;
+    --color-amarillo: #FFD700;
+    --color-amarillo-hover: #FFC107;
+    --color-blanco: #FFFFFF;
+
+    --fuente-principal: "Poppins", sans-serif;
+
+    --transicion: 0.3s ease;
+}
