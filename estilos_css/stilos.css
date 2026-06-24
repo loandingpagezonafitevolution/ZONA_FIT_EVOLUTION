@@ -1,4 +1,5 @@
-@import url("header.css");
+/* El orden es fundamental */
 @import url("variables.css");
+@import url("header.css");
 @import url("estilo.css");
 @import url("responsive.css");

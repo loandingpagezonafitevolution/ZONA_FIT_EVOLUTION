@@ -699,9 +699,9 @@ footer {
 
 .FQA {
   background-color: var(--color-negro-secundario);
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 50px 5%;
 }
+
 .contenedor_FQA {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -712,18 +712,4 @@ footer {
   background: #000;
   padding: 20px;
   border-radius: 8px;
-}
-
-/* --- AJUSTE RESPONSIVO DEFINITIVO --- */
-@media (max-width: 768px) {
-  /* 1. Ajustes del Hero */
-  .hero {
-    padding-top: 50px !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
-    min-height: auto !important;
-  }
-  .hero h1 {
-    font-size: 2rem !important;
-  }
 }

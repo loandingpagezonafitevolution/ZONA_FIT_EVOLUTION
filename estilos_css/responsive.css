@@ -1,11 +1,296 @@
-@media (max-width: 768px) {
-  /* Forzar grids a una sola columna */
-  .contenedor_funcionalidades,
+/* ============================================
+   RESPONSIVE — ZONA FIT EVOLUTION
+   Breakpoints: 1024px | 768px | 480px
+   ============================================ */
+
+/* ─── TABLET (≤1024px) ─────────────────────── */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .header__inner {
+    padding: 0 24px;
+  }
+
+  .hero {
+    padding-top: 100px;
+    min-height: auto;
+    padding-bottom: 60px;
+  }
+
+  .inicio {
+    width: 65%;
+    margin-left: 5%;
+  }
+  .titulo {
+    font-size: 3.5rem;
+  }
+
+  .contenedor_funcionalidades {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .estadisticas_grid,
-  .faq_grid,
-  .contenedor_FQA {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    width: 95% !important;
+  .contenedor_stats {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contenedor_FQA,
+  .faq_grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contacto_contenido {
+    gap: 24px;
+  }
+
+  .seguridad {
+    background: linear-gradient(to bottom, #000 50%, #ffd000 50%);
+    padding: 40px 5%;
+  }
+
+  .seguridad h2,
+  .seguridad > p,
+  .contenedor_seguridad {
+    transform: none;
+  }
+
+  .contenedor_seguridad {
+    gap: 24px;
+    max-width: 100%;
+  }
+
+  .footer_grid {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .footer_marca {
+    width: 100%;
+  }
+}
+
+/* ─── MÓVIL GRANDE (≤768px) ─────────────────── */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .header__inner {
+    padding: 0 16px;
+    height: 64px;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 1001;
+  }
+
+  .menu-hamburguesa span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-amarillo);
+    border-radius: 2px;
+    transition: var(--transicion);
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-negro);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid var(--color-amarillo);
+    gap: 0;
+  }
+
+  .nav_link {
+    width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #1a1a1a;
+  }
+
+  .nav.activo {
+    display: flex;
+  }
+
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    min-height: auto;
+    align-items: flex-start;
+  }
+
+  .inicio {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .titulo {
+    font-size: 2.6rem;
+  }
+
+  .botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .boton_amarillo,
+  .boton_transparente {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .contenedor_funcionalidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .estadisticas_grid,
+  .contenedor_stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .beneficios::before {
+    width: 100%;
+    clip-path: none;
+    height: 50%;
+    top: 0;
+  }
+
+  .beneficios_contenido {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 40px;
+  }
+
+  .beneficios_lista li {
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .icono_lista {
+    color: #ffd000;
+  }
+  .seguridad {
+    background: #000;
+    padding: 40px 5%;
+  }
+
+  .seguridad h2 {
+    color: #fff;
+    font-size: 2rem;
+    transform: none;
+  }
+  .seguridad h2 span {
+    color: #ffd000;
+    transform: none;
+  }
+  .seguridad > p {
+    color: #ccc;
+    max-width: 100%;
+    transform: none;
+    margin-bottom: 30px;
+  }
+
+  .contenedor_seguridad {
+    flex-direction: column;
+    transform: none;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .contacto_contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .contenedor_FQA,
+  .faq_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer_grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer_marca {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* ─── MÓVIL PEQUEÑO (≤480px) ────────────────── */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .contenedor_funcionalidades {
+    grid-template-columns: 1fr;
+  }
+
+  .estadisticas_grid,
+  .contenedor_stats {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 20px 0;
+  }
+  .funcionalidades {
+    padding: 40px 0;
+  }
+  .estadisticas,
+  .stats {
+    padding: 30px 0;
+  }
+  .contacto {
+    padding: 40px 0;
+  }
+  .FQA {
+    padding: 30px 5%;
+  }
+
+  .contenido_seguridad h3 {
+    font-size: 1.1rem;
+  }
+  .footer_copy {
+    font-size: 0.7rem;
   }
 }

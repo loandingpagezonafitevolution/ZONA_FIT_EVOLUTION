@@ -8,6 +8,10 @@ header {
   z-index: 1000;
 }
 
+.menu-hamburguesa {
+  display: none;
+}
+
 .header__inner {
   max-width: 1400px;
   height: 80px;
