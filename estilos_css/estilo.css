@@ -695,21 +695,86 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ===== FAQ ===== */
+/* ===== FQA ACORDEÓN ===== */
 
 .FQA {
   background-color: var(--color-negro-secundario);
-  padding: 50px 5%;
+  padding: 60px 5%;
+}
+
+.FQA h2 {
+  text-align: center;
+  color: var(--color-amarillo);
+  margin-bottom: 40px;
 }
 
 .contenedor_FQA {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.contenido_FQA {
+.fqa_item {
   background: #000;
-  padding: 20px;
   border-radius: 8px;
+  border: 1px solid #222;
+  overflow: hidden;
+}
+
+.fqa_pregunta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--fuente-principal);
+  cursor: pointer;
+  text-align: left;
+  gap: 12px;
+  transition: color 0.3s;
+}
+
+.fqa_pregunta:hover {
+  color: var(--color-amarillo);
+}
+
+.fqa_pregunta[aria-expanded="true"] {
+  color: var(--color-amarillo);
+  border-bottom: 1px solid #222;
+}
+
+.fqa_icono {
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.fqa_pregunta[aria-expanded="true"] .fqa_icono {
+  transform: rotate(180deg);
+}
+
+.fqa_respuesta {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.35s ease,
+    padding 0.35s ease;
+  padding: 0 20px;
+}
+
+.fqa_respuesta.abierto {
+  max-height: 200px;
+  padding: 16px 20px;
+}
+
+.fqa_respuesta p {
+  color: #ccc;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
