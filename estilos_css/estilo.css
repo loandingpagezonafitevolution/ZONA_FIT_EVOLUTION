@@ -714,8 +714,9 @@ footer {
   border-radius: 8px;
 }
 
+/* --- AJUSTES RESPONSIVOS UNIFICADOS --- */
 @media (max-width: 768px) {
-  /* Ajustes del Hero */
+  /* 1. Ajustes del Hero (Encabezado principal) */
   .hero {
     padding-top: 50px !important;
     padding-left: 15px !important;
@@ -726,18 +727,24 @@ footer {
     font-size: 2rem !important;
   }
 
-  /* Ajustes de todas las secciones en Grid */
+  /* 2. Ajustes de todas las secciones en Grid (Funcionalidades, Stats, FAQ) */
+  /* Aquí unificamos los contenedores para que pasen a 1 sola columna */
   .contenedor_funcionalidades,
   .estadisticas_grid,
-  .faq_grid {
+  .faq_grid,
+  .contenedor_FQA {
     grid-template-columns: 1fr !important;
     width: 95% !important;
     gap: 15px !important;
+    margin: 0 auto !important;
   }
 
+  /* 3. Ajustes de las tarjetas individuales */
   .funcionalidad,
   .estadistica,
-  .faq_item {
+  .faq_item,
+  .contenido_FQA {
     min-height: auto !important;
+    width: 100% !important;
   }
 }
