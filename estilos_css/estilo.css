@@ -724,3 +724,17 @@ footer {
     font-size: 2.5rem;
   }
 }
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 50px !important; /* Reduce el espacio superior */
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    min-height: auto !important; /* Permite que la altura se ajuste al contenido */
+  }
+
+  .hero h1 {
+    /* Ajusta el selector si tu clase se llama diferente */
+    font-size: 2rem !important;
+  }
+}
