@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+  /* Forzar grids a una sola columna */
+  .contenedor_funcionalidades,
+  .estadisticas_grid,
+  .faq_grid,
+  .contenedor_FQA {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 95% !important;
+  }
+}
