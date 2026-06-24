@@ -141,14 +141,63 @@ El proyecto se gestionó mediante Git y GitHub siguiendo una metodología basada
 * css
 * javascrt
 
-### Convención de Commits
-utilicemos los scrum para crear los commits
+# Convención de Commits
 
-[.................................]
-commit:  SCRUM-24	Implementación de colores, tipografías, espaciados y variables globales CSS
-commit: SCRUM-29	Adaptación responsive para dispositivos móviles y tablets
-commit: SCRUM-30	Implementación del menú desplegable y sección FAQ
+## Historial de Commits
 
+###  24 de junio de 2026
+
+| Scrum | Descripción | Autor |
+|---------|------------|--------|
+| SCRUM-30 | Diseño menú desplegable FQA finalizado | juanmejia017 |
+| SCRUM-29 | Diseño responsive finalizado | juanmejia017 |
+| SCRUM-29 | Funcionalidades responsive | juanmejia017 |
+| SCRUM-29 | Más funcionalidades responsive | juanmejia017 |
+| SCRUM-29 | Adaptación para todo tipo de dispositivos | juanmejia017 |
+| SCRUM-29 | Diseño responsive | juanmejia017 |
+
+###  Commits de integración y configuración
+
+| Descripción | Autor |
+|------------|--------|
+| Merge branch `javascript` into `develop` | juanmejia017 |
+| Merge branch `css` into `develop` | juanmejia017 |
+| Configuraciones GitHub Pages | juanmejia017 |
+| Agrego index | juanmejia017 |
+| Eliminar carpeta HTML del repositorio | juanmejia017 |
+| Forzar re-detección de archivos | juanmejia017 |
+| Borrado archivo de prueba | juanmejia017 |
+| Correcciones de ortografía | juanmejia017 |
+| Creación de archivo README | MMBEGAMBRE |
+| Create CNAME | juanmejia017 |
+| Delete CNAME | juanmejia017 |
+
+---
+
+### 22 de junio de 2026
+
+| Scrum | Descripción | Autor |
+|---------|------------|--------|
+| SCRUM-26 | Estilos de iconos, botones y footer | MMBEGAMBRE |
+| SCRUM-24 | Implementar colores, tipografías, espaciados y efectos visuales | MMBEGAMBRE |
+
+---
+
+### 21 de junio de 2026
+
+| Scrum | Descripción | Autor |
+|---------|------------|--------|
+| SCRUM-28 | Enlaces, correo, teléfono, dirección y derechos de autor en el footer | LPAMENDEZ |
+| SCRUM-27 | Preguntas frecuentes - markup estático | LPAMENDEZ |
+| SCRUM-26 | Iconos para funcionalidades, beneficios, estadísticas, seguridad y redes sociales | LPAMENDEZ |
+| SCRUM-25 | Contenido del hero: propuesta de valor y CTAs | LPAMENDEZ |
+| SCRUM-22 | Implementar logo y nombre de Zona Fit Evolution con paleta negro y amarillo | MMBEGAMBRE |
+
+###  Recursos
+
+| Descripción | Autor |
+|------------|--------|
+| Imágenes para el fondo | MMBEGAMBRE |
 
 
  Equipo de Desarrollo
