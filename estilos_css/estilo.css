@@ -724,7 +724,6 @@ footer {
     font-size: 2.5rem;
   }
 }
-/* --- AJUSTES RESPONSIVOS FINALES (TODO EN UN SOLO LUGAR) --- */
 @media (max-width: 768px) {
   /* 1. Ajustes del Hero */
   .hero {
@@ -733,18 +732,26 @@ footer {
     padding-right: 15px !important;
     min-height: auto !important;
   }
-
   .hero h1 {
     font-size: 2rem !important;
   }
 
-  /* 2. Ajustes de Funcionalidades */
+  /* 2. Ajustes de Funcionalidades (Grid de 6 a 1 columna) */
   .contenedor_funcionalidades {
-    grid-template-columns: 1fr; /* Una sola columna en móvil */
+    grid-template-columns: 1fr !important;
     width: 95%;
   }
-
   .funcionalidad {
     min-height: auto;
+  }
+
+  /* 3. Ajustes de Estadísticas (Grid de 5 a 1 columna) */
+  .estadisticas_grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 4. Ajustes de FAQ (Grid de 4 a 1 columna) */
+  .faq_grid {
+    grid-template-columns: 1fr !important;
   }
 }
