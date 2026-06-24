@@ -725,16 +725,18 @@ footer {
   }
 }
 /* Ajustes para pantallas pequeñas */
+/* ... resto de tu archivo ... */
+
+/* Ajustes RESPONSIVOS finales */
 @media (max-width: 768px) {
   .hero {
-    padding-top: 50px !important; /* Reduce el espacio superior */
+    padding-top: 50px !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
-    min-height: auto !important; /* Permite que la altura se ajuste al contenido */
+    min-height: auto !important;
   }
 
   .hero h1 {
-    /* Ajusta el selector si tu clase se llama diferente */
     font-size: 2rem !important;
   }
 }
