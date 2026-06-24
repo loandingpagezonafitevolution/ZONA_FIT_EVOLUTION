@@ -724,11 +724,9 @@ footer {
     font-size: 2.5rem;
   }
 }
-/* Ajustes para pantallas pequeñas */
-/* ... resto de tu archivo ... */
-
-/* Ajustes RESPONSIVOS finales */
+/* --- AJUSTES RESPONSIVOS FINALES (TODO EN UN SOLO LUGAR) --- */
 @media (max-width: 768px) {
+  /* 1. Ajustes del Hero */
   .hero {
     padding-top: 50px !important;
     padding-left: 15px !important;
@@ -738,5 +736,15 @@ footer {
 
   .hero h1 {
     font-size: 2rem !important;
+  }
+
+  /* 2. Ajustes de Funcionalidades */
+  .contenedor_funcionalidades {
+    grid-template-columns: 1fr; /* Una sola columna en móvil */
+    width: 95%;
+  }
+
+  .funcionalidad {
+    min-height: auto;
   }
 }
