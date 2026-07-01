@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+
+  frontend:
+    build: .
+    container_name: zonafit_frontend
+
+    ports:
+      - "8080:80"
+
+    depends_on:
+      - backend
+
+    networks:
+      - zonafit_network
+
+  backend:
+    build: ./Backend
+    container_name: zonafit_backend
+
+    ports:
+      - "5000:5000"
+
+    volumes:
+      - zonafit_logs:/app/logs
+
+    networks:
+      - zonafit_network
+
+networks:
+  zonafit_network:
+    driver: bridge
+
+volumes:
+  zonafit_logs:
