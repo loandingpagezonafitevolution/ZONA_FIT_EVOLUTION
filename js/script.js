@@ -1,4 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+
+  // --- Conexión con el Backend ---
+
+// Obtener el elemento donde se mostrará el estado
+const estadoBackend = document.getElementById("estado-backend");
+
+// Verificar que el elemento exista en la página
+if (estadoBackend) {
+
+  // Consumir el endpoint de estado del backend
+  fetch("http://localhost:5000/api/estado")
+    .then((res) => res.json())
+
+    // Mostrar respuesta exitosa
+    .then((data) => {
+      estadoBackend.textContent =
+        `✅ Backend conectado: ${data.sistema} (${data.estado})`;
+    })
+
+    // Mostrar mensaje si ocurre un error
+    .catch(() => {
+      estadoBackend.textContent =
+        "⚠️ No se pudo conectar con el backend";
+    });
+}
   // --- 1. Lógica del Menú de Navegación ---
   const btnMenu = document.getElementById("btn-menu");
   const nav = document.getElementById("nav");

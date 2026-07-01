@@ -9,6 +9,9 @@ services:
     ports:
       - "8080:80"
 
+    volumes:
+      - .:/usr/share/nginx/html
+
     depends_on:
       - backend
 
@@ -23,6 +26,7 @@ services:
       - "5000:5000"
 
     volumes:
+      - ./Backend:/app
       - zonafit_logs:/app/logs
 
     networks:

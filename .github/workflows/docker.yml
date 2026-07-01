@@ -3,13 +3,13 @@ name: CI Zona Fit Evolution
 on:
   push:
     branches:
+      - develop
       - main
-      - master
 
   pull_request:
     branches:
+      - develop
       - main
-      - master
 
 jobs:
   validar-contenedores:
